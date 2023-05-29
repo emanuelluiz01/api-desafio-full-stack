@@ -24,7 +24,7 @@ class User {
     @CreateDateColumn({ type: "date" })
     created_at: string;
 
-    @OneToMany(() => Contact, (contact) => contact.user)
+    @OneToMany(() => Contact, (contacts) => contacts.user)
     contacts: Contact[];
 }
 

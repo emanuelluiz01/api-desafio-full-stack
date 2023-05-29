@@ -6,7 +6,11 @@ import { AppDataSource } from "../../data-source";
 const listUsersService = async (): Promise<iUsersReturn> => {
     const userRepository: Repository<User> = AppDataSource.getRepository(User);
 
-    const findUsers: iUsersReturn = await userRepository.find();
+    const findUsers: iUsersReturn = await userRepository.find({
+        relations: {
+            contacts: true,
+        },
+    });
 
     return findUsers;
 };
