@@ -16,8 +16,6 @@ const updateUserService = async (
         id: userId,
     });
 
-    console.log(oldUserData);
-
     if (!oldUserData) {
         throw new AppError("User not found", 404);
     }

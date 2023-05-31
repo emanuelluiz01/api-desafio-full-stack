@@ -15,7 +15,7 @@ const updateContactService = async (
     const contactRepo: Repository<Contact> =
         AppDataSource.getRepository(Contact);
 
-    const oldContactData: Contact | null = await contactRepo.findOneBy({
+    const oldContactData: Contact | null | any = await contactRepo.findOneBy({
         id: contactId,
     });
 

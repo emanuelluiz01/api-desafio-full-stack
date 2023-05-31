@@ -6,7 +6,6 @@ import { returnContactSchema } from "../../schemas/contact.schema";
 const createContactService = async (
     contactData: any
 ): Promise<iContactRequest> => {
-    console.log(contactData);
     const contactRepo = AppDataSource.getRepository(Contact);
 
     const contact = contactRepo.create(contactData);

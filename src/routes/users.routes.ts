@@ -14,8 +14,8 @@ const usersRoutes = Router();
 usersRoutes.get("", listUsersController);
 usersRoutes.post(
     "",
-    validateDatas(userSchema),
     emailExists,
+    validateDatas(userSchema),
     createUserController
 );
 
