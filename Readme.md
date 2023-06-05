@@ -2,6 +2,9 @@
 
 ## Passos necessários para funcionamento
 
+-   https://www.postgresql.org/
+-   https://www.youtube.com/watch?v=L_2l8XTCPAE&ab_channel=HashtagPrograma%C3%A7%C3%A3o
+
 -   Para esse projeto iremos utilizar o PostgreSQL, é necessario instalar em sua maquina e logo após criar um usuário. Logo apos criar um arquivo .env contendo as mesma informações do .env.example, trocando as pelo usuario, senha, host, porta e uma database com o seguinte nome
 
 ```shell
